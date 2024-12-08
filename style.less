@@ -1,0 +1,899 @@
+@full-size: 100%;
+@margin: 0;
+@display: flex;
+@box-sizing: border-box;
+@bg-size: cover;
+@bg-position: center;
+@font-size1: 13px;
+@font-size2: 18px;
+@font-weight1: 400;
+@font-weight2: 700;
+@color1: #fff;
+@color2: #868585;
+@color3: #303030;
+@bg-color1: #fff;
+@border-radius: 4px;
+@button-bg-color: transparent;
+@cursor: pointer;
+@transition: 0.6s;
+@icon-margin-right: 10px;
+
+html, body {
+  font-family: "Noto Sans", sans-serif;
+  height: @full-size;
+  margin: @margin;
+}
+
+// Wrapper
+
+.wrapper {
+  width: @full-size;
+  height: @full-size;
+}
+
+// First-section
+
+.first-section {
+  display: @display;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: @full-size;
+  height: @full-size;
+  box-sizing: @box-sizing;
+  padding: 29px 0 29px 0;
+  background-size: @bg-size;
+  background-position: @bg-position;
+  background-image: url(./img/photo-background-1.png);
+}
+
+.logo, .logo-footer {
+  cursor: @cursor;
+  width: 139px;
+  height: 37px;
+}
+
+.logo {
+  margin-bottom: 105px;
+}
+
+.green-tariff {
+  font-size: @font-size1;
+  font-weight: @font-weight1;
+  margin: @margin;
+  color: @color1;
+}
+
+.solar-power-plant {
+  font-size: 48px;
+  font-weight: @font-weight2;
+  margin: @margin;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  color: @color1;
+}
+
+.profit-per-month {
+  font-size: 31px;
+  font-weight: @font-weight2;
+  margin: @margin;
+  margin-bottom: 75px;
+  color: @color1;
+}
+
+.first-consultation {
+  cursor: @cursor;
+  border: 1.5px solid #fff;
+  border-radius: @border-radius;
+  width: @full-size;
+  max-width: 221px;
+  height: 34px;
+  transition: @transition;
+  background-color: @button-bg-color;
+  .green-tariff();
+}
+
+.first-consultation:hover {
+  border: 1.5px solid #c4c4c4;
+  color: #c4c4c4;
+}
+
+.messengers, .messengers-footer {
+  display: @display;
+  flex-direction: row;
+  justify-content: center;
+  width: 126px;
+  height: 24px;
+}
+
+.messengers {
+  margin-top: 250px;
+}
+
+.messengers-footer {
+  margin-top: 4px;
+}
+
+.instagram, .telegram, .viber, .facebook, 
+.instagram-footer, .telegram-footer, .viber-footer, .facebook-footer {
+  cursor: @cursor;
+}
+
+.instagram, .telegram, .viber, 
+.instagram-footer, .telegram-footer, .viber-footer {
+  margin-right: @icon-margin-right;
+}
+
+// Second-section
+
+.second-section {
+  display: @display;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: @full-size;
+  height: 798px;
+  box-sizing: @box-sizing;
+  padding: 112px 270px;
+  background-color: @bg-color1;
+}
+
+// Left-part-second-section
+
+.left-part-second-section {
+  display: @display;
+  flex-direction: column;
+  width: 50%;
+  height: @full-size;
+}
+
+.services {
+  font-size: @font-size2;
+  font-weight: @font-weight2;
+  margin: @margin;
+  margin-bottom: 45px;
+  color: @color2;
+}
+
+.title-second-section-one {
+  font-size: @font-size1;
+  font-weight: @font-weight2;
+  margin: @margin;
+  margin-bottom: 12px;
+  color: @color3;
+}
+
+.descr-second-section-one {
+  font-size: 11px;
+  font-weight: @font-weight1;
+  margin: @margin;
+  margin-bottom: 41px;
+  color: @color3;
+}
+
+.title-second-section-two, .title-second-section-three, .title-second-section-four {
+  .title-second-section-one();
+}
+
+.descr-second-section-two, .descr-second-section-three, .descr-second-section-four {
+  .descr-second-section-one();
+}
+
+// Right-part-second-section
+
+.right-part-second-section {
+  display: @display;
+  flex-direction: row;
+  justify-content: end;
+  align-items: end;
+  width: 50%;
+  height: @full-size;
+}
+
+.solar-plants {
+  width: @full-size;
+  max-width: 450px;
+}
+
+// Third-section
+
+.third-section {
+  display: @display;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: @full-size;
+  height: 375px;
+  background-size: @bg-size;
+  background-position: @bg-position;
+  background-image: url(./img/photo-background-2.png);
+}
+
+.station {
+  font-size: 31px;
+  font-weight: @font-weight1;
+  margin: @margin;
+  color: @color1;
+}
+
+// Forth-section
+
+.forth-section {
+  display: @display;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: @full-size;
+  height: 1257px;
+  box-sizing: @box-sizing;
+  padding: 112px 270px;
+  background-color: @bg-color1;
+}
+
+// Top-part-forth-section
+
+.top-part-forth-section {
+  display: @display;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: @full-size;
+  height: 40%;
+  margin-bottom: 136px;
+}
+
+// Left-part-top - Right-part-top
+
+.left-part-top, .right-part-top {
+  display: @display;
+  flex-direction: column;
+  width: 50%;
+  height: @full-size;
+}
+
+.our-clients {
+  .services();
+}
+
+.left-house {
+  width: @full-size;
+  max-width: 382px;
+}
+
+
+.title-forth-section-one {
+  font-size: @font-size1;
+  font-weight: @font-weight2;
+  margin: @margin;
+  margin-top: 62px;
+  margin-bottom: 24px;
+  color: @color3;
+}
+
+.descr-forth-section-one {
+  font-size: 11px;
+  font-weight: @font-weight1;
+  margin: @margin;
+  color: @color3;
+}
+
+.descr-forth-section-two, .descr-forth-section-three, .descr-forth-section-four  {
+  .descr-forth-section-one();
+  margin-top: 12px;
+}
+
+.descr-forth-section-four {
+  margin-bottom: 106px;
+}
+
+.forth-consultation {
+  .first-consultation();
+  border: 1.5px solid #303030;
+  color: @color3;
+}
+
+.forth-consultation:hover {
+  border: 1.5px solid #c4c4c4;
+  color: #c4c4c4;
+}
+
+// Bottom-part-forth-section
+
+.bottom-part-forth-section {
+  display: @display;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: @full-size;
+  height: 60%;
+}
+
+// Left-part-bottom
+
+.left-part-bottom {
+  .left-part-top();
+}
+
+.five-steps {
+  .services();
+}
+
+.first-step {
+  font-size: 11px;
+  font-weight: @font-weight1;
+  margin: @margin;
+  margin-bottom: 8px;
+  color: #868585;
+}
+
+.title-forth-section-two {
+  font-size: @font-size1;
+  font-weight: @font-weight2;
+  margin: @margin;
+  margin-bottom: 8px;
+  color: @color3;
+}
+
+.descr-forth-section-five {
+  font-size: 11px;
+  font-weight: @font-weight1;
+  margin: @margin;
+  margin-bottom: 23px;
+  color: @color3;
+}
+
+.second-step, .third-step, .forth-step, .fifth-step {
+  .first-step();
+}
+
+.title-forth-section-three, .title-forth-section-four, 
+.title-forth-section-five, .title-forth-section-six {
+  .title-forth-section-two();
+}
+
+.descr-forth-section-six, .descr-forth-section-seven, 
+.descr-forth-section-eight, .descr-forth-section-nine {
+  .descr-forth-section-five();
+}
+
+// Right-part-bottom
+
+.right-part-bottom {
+  .right-part-top();
+}
+
+.right-house {
+  width: @full-size;
+  height: @full-size;
+}
+
+// Footer
+
+.footer {
+  display: @display;
+  flex-direction: column;
+  width: @full-size;
+  height: 547px;
+  background-size: @bg-size;
+  background-position: @bg-position;
+  background-image: url(./img/photo-background-3.png);
+}
+
+// Top-part-footer
+
+.top-part-footer {
+  display: @display;
+  flex-direction: column;
+  justify-content: center;
+  width: @full-size;
+  height: 80%;
+  padding: 52px 270px;
+  box-sizing: @box-sizing;
+}
+
+.contacts {
+  font-size: @font-size2;
+  font-weight: @font-weight2;
+  margin: @margin;
+  margin-bottom: 44px;
+  color: @color1;
+}
+
+.descr-footer-one {
+  font-size: 11px;
+  font-weight: @font-weight1;
+  margin: @margin;
+  color: @color1;
+}
+
+.descr-footer-two, .descr-footer-three, .descr-footer-four, .descr-footer-five {
+  .descr-footer-one();
+  margin-top: 24px;
+}
+
+// Bottom-part-footer
+
+.bottom-part-footer {
+  display: @display;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: @full-size;
+  height: 20%;
+  padding: 0 270px;
+  box-sizing: @box-sizing;
+}
+
+.container-for-descr, .container-for-messengers {
+  width: 33.3%;
+  height: @full-size;
+}
+
+.container-for-descr, .container-for-logo, .container-for-messengers {
+  display: @display;
+  flex-direction: row;
+}
+
+.container-for-descr {
+  justify-content: start;
+}
+
+.container-for-logo {
+  justify-content: center;
+}
+
+.container-for-messengers {
+  justify-content: end;
+}
+
+.container-for-logo {
+  width: 33.4%;
+  height: @full-size;
+}
+
+.descr-footer-six {
+  .descr-footer-one();
+  margin-top: 4px;
+}
+
+@laptop1: 1280px;
+@laptop2: 1220px;
+@laptop3: 1180px;
+@laptop4: 1140px;
+@laptop5: 1120px;
+@laptop6: 1080px;
+@laptop7: 1060px;
+@laptop8: 1024px;
+@laptop9: 1020px;
+@tablet1: 980px;
+@tablet2: 960px;
+@tablet3: 920px;
+@tablet4: 880px;
+@tablet5: 710px;
+@tablet6: 660px;
+@tablet7: 580px;
+@mobile1: 480px;
+@mobile2: 400px;
+@mobile3: 374px;
+@mobile4: 310px;
+@mobile5: 265px;
+
+@media screen and (max-width: @laptop1) {
+
+  .second-section, .forth-section {
+    padding: 112px 216px;
+  }
+
+  .descr-forth-section-four {
+    margin-bottom: 96px;
+  }
+
+  .top-part-footer {
+    padding: 52px 216px;
+  }
+
+  .bottom-part-footer {
+    padding: 0 200px;
+  }
+
+}
+
+@media screen and (max-width: @laptop2) {
+
+  .second-section, .forth-section {
+    padding: 112px 196px;
+  }
+
+  .top-part-footer {
+    padding: 52px 196px;
+  }
+
+  .bottom-part-footer {
+    padding: 0 196px;
+  }
+
+}
+
+@media screen and (max-width: @laptop3) {
+
+  .second-section, .forth-section {
+    padding: 112px 176px;
+  }
+
+  .top-part-footer {
+    padding: 52px 176px;
+  }
+
+  .bottom-part-footer {
+    padding: 0 176px;
+  }
+  
+}
+
+@media screen and (max-width: @laptop4) {
+
+  .second-section, .forth-section {
+    padding: 112px 146px;
+  }
+
+  .descr-forth-section-four {
+    margin-bottom: 109px;
+  }
+
+  .top-part-footer {
+    padding: 52px 146px;
+  }
+
+  .bottom-part-footer {
+    padding: 0 146px;
+  }
+
+}
+
+@media screen and (max-width: @laptop5) {
+
+  .descr-forth-section-four {
+    margin-bottom: 96px;
+  }
+
+}
+
+@media screen and (max-width: @laptop6) {
+
+  .second-section, .forth-section {
+    padding: 112px 116px;
+  }
+
+  .descr-forth-section-four {
+    margin-bottom: 109px;
+  }
+
+  .top-part-footer {
+    padding: 52px 116px;
+  }
+
+  .bottom-part-footer {
+    padding: 0 116px;
+  }
+
+}
+
+@media screen and (max-width: @laptop7) {
+
+  .descr-forth-section-four {
+    margin-bottom: 96px;
+  }
+
+}
+
+@media screen and (max-width: @laptop8) {
+
+  .logo, .profit-per-month {
+    margin-bottom: 55px;
+  }
+
+  .messengers {
+    margin-top: 55px;
+  }
+
+  .second-section, .forth-section {
+    padding: 112px 96px;
+  }
+
+  .descr-forth-section-four {
+    margin-bottom: 109px;
+  }
+
+  .top-part-footer {
+    padding: 52px 96px;
+  }
+
+  .bottom-part-footer {
+    padding: 0 96px;
+  }
+
+}
+
+@media screen and (max-width: @laptop9) {
+
+  .descr-forth-section-four {
+    margin-bottom: 96px;
+  }
+
+}
+
+@media screen and (max-width: @tablet1) {
+
+  .second-section, .forth-section {
+    padding: 112px 66px;
+  }
+
+  .descr-forth-section-four {
+    margin-bottom: 109px;
+  }
+
+  .top-part-footer {
+    padding: 52px 66px;
+  }
+
+  .bottom-part-footer {
+    padding: 0 66px;
+  }
+
+}
+
+@media screen and (max-width: @tablet2) {
+
+  .descr-forth-section-four {
+    margin-bottom: 96px;
+  }
+
+}
+
+@media screen and (max-width: @tablet3) {
+
+  .second-section, .forth-section {
+    padding: 112px 46px;
+  }
+
+  .top-part-footer {
+    padding: 52px 46px;
+  }
+
+  .bottom-part-footer {
+    padding: 0 46px;
+  }
+
+}
+
+@media screen and (max-width: @tablet4) {
+
+  .second-section {
+    flex-direction: column;
+    height: 1196px;
+    padding: 46px 160px;
+  }
+
+  .left-part-second-section, .right-part-second-section {
+    width: @full-size;
+    height: 50%;
+  }
+
+  .left-part-second-section {
+    justify-content: center;
+  }
+
+  .solar-plants {
+    max-width: @full-size;
+    height: @full-size;
+  }
+
+  .forth-section {
+    height: 2114px;
+    padding: 46px 160px;
+  }
+
+  .top-part-forth-section {
+    flex-direction: column;
+  }
+
+  .left-part-top, .right-part-top {
+    justify-content: center;
+    width: @full-size;
+    height: 50%;
+  }
+
+  .title-forth-section-one {
+    margin: @margin;
+    margin-bottom: 24px;
+  }
+
+  .top-part-forth-section {
+    margin-bottom: 46px;
+  }
+
+  .bottom-part-forth-section {
+    flex-direction: column;
+  }
+
+  .left-part-bottom {
+    .left-part-top();
+  }
+
+  .right-part-bottom {
+    .right-part-top();
+  }
+
+  .top-part-footer {
+    padding: 52px 160px;
+  }
+
+  .bottom-part-footer {
+    flex-direction: column;
+    padding: 0 160px;
+  }
+
+  .container-for-descr, .container-for-logo, .container-for-messengers {
+    justify-content: start;
+    align-items: center;
+    width: @full-size;
+  }
+
+  .container-for-descr, .container-for-messengers {
+    height: 33.3%;
+  }
+
+  .container-for-logo {
+    height: 33.4%;
+  }
+
+}
+
+@media screen and (max-width: @tablet5) {
+    
+  .second-section, .forth-section {
+    padding: 46px 100px;
+  }
+
+  .top-part-footer {
+    padding: 52px 100px;
+  }
+
+  .bottom-part-footer {
+    padding: 0 100px;
+  }
+
+}
+
+@media screen and (max-width: @tablet6) {
+
+  .solar-power-plant {
+    font-size: 40px;
+  }
+  
+  .profit-per-month {
+    font-size: 22px;
+  }
+
+  .station {
+    font-size: 22px;
+  }
+
+}
+
+@media screen and (max-width: @tablet7) {
+  
+  .second-section, .forth-section {
+    padding: 46px 50px;
+  }
+
+  .top-part-footer {
+    padding: 52px 50px;
+  }
+
+  .bottom-part-footer {
+    padding: 0 50px;
+  }
+
+}
+
+@media screen and (max-width: @mobile1) {
+
+  .second-section, .forth-section {
+    padding: 10px;
+  }
+
+  .top-part-forth-section {
+    margin-bottom: 10px;
+  }
+
+  .top-part-footer {
+    padding: 52px 10px;
+  }
+
+  .bottom-part-footer {
+    padding: 0 10px;
+  }
+
+}
+
+@media screen and (max-width: @mobile2) {
+
+  .solar-power-plant {
+    font-size: 35px;
+  }
+
+}
+
+@media screen and (max-width: @mobile3) {
+
+  .second-section {
+    height: 1096px;
+  }
+
+  .left-part-second-section, .left-part-bottom {
+    height: 65%;
+  }
+
+  .left-part-bottom {
+    justify-content: center;
+  }
+
+  .right-part-second-section, .right-part-bottom {
+    height: 35%;
+  }
+
+  .forth-section {
+    height: 1714px;
+  }
+
+}
+
+@media screen and (max-width: @mobile4) {
+
+  .solar-power-plant {
+    font-size: 30px;
+  }
+
+  .profit-per-month {
+    font-size: 20px;
+  }
+
+  .left-part-second-section, .left-part-bottom {
+    height: 70%;
+  }
+
+  .right-part-second-section, .right-part-bottom {
+    height: 30%;
+  }
+
+  .station {
+    font-size: 20px;
+  }
+  
+}
+
+@media screen and (max-width: @mobile5) {
+
+  .solar-power-plant {
+    font-size: 25px;
+  }
+  
+  .profit-per-month {
+    font-size: 17px;
+  }
+
+  .station {
+    font-size: 17px;
+  }
+
+  .left-part-second-section, .left-part-second-section, .left-part-bottom {
+    height: 75%;
+  }
+
+  .right-part-second-section, .right-part-second-section, .right-part-bottom {
+    height: 25%;
+  }
+
+}
